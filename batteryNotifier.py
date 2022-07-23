@@ -29,5 +29,6 @@ while(1):
         else:
             print(d + " : " + device['percentage'] +"%")
 
+    #While interation every hour
     time.sleep(60*60)
 
