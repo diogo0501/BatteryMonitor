@@ -4,7 +4,7 @@ import time
 
 while(1):
     #Get json from jsonbin.io
-    url = 'https://api.jsonbin.io/v3/b/62daee75248d43754ffffda2/latest'
+    url = 'https://api.jsonbin.io/v3/b/62daf33f2c868775a53389d5/latest'
     headers = {
     'X-Master-Key': '$2b$10$Jey0JZy.YVYlPVIxIxadAeoxN3bnvkcEywwA8zAZoZGvfgJPoJ6Q2'
     }
@@ -16,6 +16,8 @@ while(1):
 
     #Get device dict
     r = bat_obj['record']
+
+    print(r)
 
     #Print all percentages from dict and notify 
     for d in r:
