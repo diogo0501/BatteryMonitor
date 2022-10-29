@@ -5,7 +5,7 @@ from batteryChecker import BatteryQuery
 from upower_python.upower import UPowerManager
 import math 
 
-dev_list = ['SoundCoreP3','LogKeyboard']
+dev_list = ['SoundCoreP3','LogKeyboard','MiBand']
 
 def main():
 
@@ -52,6 +52,10 @@ def putPercentageHandler(device_list,json):
             new_perc = getLogKeyboardBatLevel()
             percs.append((device,new_perc))
 
+        elif device == 'MiBand':
+            new_perc = getMiBandBatLevel()
+            percs.append((device,new_perc))
+
     for dev,perc in percs:
 
         device = json[dev]
@@ -78,6 +82,18 @@ def getSoundCoreBatLevel():
 def getLogKeyboardBatLevel():
     
     bat_name = '/org/freedesktop/UPower/devices/keyboard_hidpp_battery_0'
+
+    u = UPowerManager()
+
+    new_perc = math.floor(u.get_device_percentage(bat_name))
+
+    print(new_perc)
+
+    return new_perc
+
+def getMiBandBatLevel():
+    
+    bat_name = '/org/freedesktop/UPower/devices/keyboard_dev_F8_1D_82_4E_38_80'
 
     u = UPowerManager()
 
