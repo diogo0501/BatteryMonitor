@@ -14,7 +14,6 @@ By this time, I wont need to tell you that this code **does not** offer any kind
     - Sony speakers
     - Samsung tablet
     - PS4 Controller
-    - Logitech Keyboard
     - Razor Mouse
 
 - Turn this in some kind of app in 
