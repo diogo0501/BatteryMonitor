@@ -23,3 +23,4 @@ By this time, I wont need to tell you that this code **does not** offer any kind
     - Linux
 
 
+Need to add real authors of several libs thay«t I'm using. If you are the author of any of these libraries please take in note that this is a personal project with no merchantability intentions. Nevertheless, I'll give all credits soon
