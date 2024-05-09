@@ -1,5 +1,6 @@
 clear
 
-gcc -g -o main main.c
+# gcc -g -o main main.c -lcurl
 
-gdb ./main -ex "run"
+gcc -g -o test test.c -lbluetooth
+# gdb ./main -ex "run"
